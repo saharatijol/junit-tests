@@ -42,4 +42,13 @@ public class Student {
         }
         return sum / grades.size();
     }
+
+    // BONUS
+    public int updateGrade() {
+        return -1;
+    }
+
+    public int deleteGrade() {
+        return -1;
+    }
 }
