@@ -25,8 +25,21 @@ public class StudentTest {
     @Test
     public void testAddGrade(){
         student.addGrade(92);
-
         assertEquals(4, student.getGrades().size());
+        assertSame(72, student.getGrades().get(0));
+    }
+
+    @Test
+    public void TestGetGradeAverage() {
+        double average = student.getGradeAverage();
+
+        assertEquals(3, student.getGrades().size());
+        assertSame(72, student.getGrades().get(0));
+        assertSame(85, student.getGrades().get(1));
+        assertSame(89, student.getGrades().get(2));
+
+
+        assertEquals(82, average, 0);
     }
 
 }
