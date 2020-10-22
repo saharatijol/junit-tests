@@ -8,13 +8,13 @@ public class Student {
     private List<Integer> grades;
 
     // Constructor
-    public Student (long id, String name) {
-        this.id = id;
+    public Student (String name, long id) {
         this.name = name;
+        this.id = id;
         this.grades = new ArrayList<>();
     }
 
-    // returns the student's id
+    // Methods
     public long getId(){
         return this.id;
     }
