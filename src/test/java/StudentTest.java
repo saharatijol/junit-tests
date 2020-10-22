@@ -19,12 +19,14 @@ public class StudentTest {
         assertEquals(student.getName(), "Sahara");
         assertEquals(student.getId(), 331652815);
         assertNotEquals(student.getId(), 331652817);
+        assertNotNull(student.getGrades());
     }
 
     @Test
     public void testAddGrade(){
         student.addGrade(92);
 
+        assertEquals(4, student.getGrades().size());
 
     }
 }
