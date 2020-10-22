@@ -27,7 +27,7 @@ public class StudentTest {
         student.addGrade(92);
 
         assertEquals(4, student.getGrades().size());
-
     }
+
 }
 
