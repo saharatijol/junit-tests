@@ -30,7 +30,7 @@ public class StudentTest {
     }
 
     @Test
-    public void TestGradeGradeAverage() {
+    public void TestGetGradeAverage() {
         double average = student.getGradeAverage();
 
         assertEquals(3, student.getGrades().size());
