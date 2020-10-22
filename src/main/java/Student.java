@@ -1,12 +1,10 @@
 import java.util.ArrayList;
-
 import java.util.List;
 
 public class Student {
 
     private long id;
     private String name;
-
     private List<Integer> grades;
 
     // Constructor
